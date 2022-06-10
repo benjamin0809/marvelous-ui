@@ -1,0 +1,12 @@
+{
+  "name": "ml-input",
+  "version": "1.0.0",
+  "description": "marvelou-ui input",
+  "main": "cjs/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjmain Chiu",
+  "license": "ISC"
+}

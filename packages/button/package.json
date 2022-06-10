@@ -1,0 +1,13 @@
+{
+  "name": "ml-button",
+  "version": "1.0.0",
+  "description": "marvelous-ui button",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "author": "Benjamin Chiu",
+  "license": "ISC"
+}
