@@ -1,6 +1,6 @@
 {
   "name": "marvelous-ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a marvelous ui,stay foolish,stay hungry",
   "main": "lib/index.js",
   "typings": "types/index.d.ts",
