@@ -5,7 +5,7 @@ export * from "./button/index";
 export * from "./input/index";
 
 const Ml_UI = {
-  install: Vue => {
+  install: (Vue: any) => {
     [Button, Input].forEach(item => {
       item.install(Vue);
     });

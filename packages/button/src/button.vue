@@ -3,7 +3,7 @@
     <slot></slot>
   </button>
 </template>
-<script>
+<script >
 export default {
   name: "MlButton",
   props: {
