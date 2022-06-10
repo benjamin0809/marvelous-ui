@@ -1,14 +1,13 @@
-import Button from "./button/index";
-import Input from "./input/index";
+import Button from './button/index'
+import Input from './input/index'
 
-export * from "./button/index";
-export * from "./input/index";
+export * from './button/index'
+export * from './input/index'
 
 const Ml_UI = {
   install: (Vue: any) => {
-    [Button, Input].forEach(item => {
-      item.install(Vue);
-    });
-  }
-};
-export default Ml_UI;
+    Button.install(Vue)
+    Input.install(Vue)
+  },
+}
+export default Ml_UI

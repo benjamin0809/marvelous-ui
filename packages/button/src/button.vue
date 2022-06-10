@@ -1,54 +1,50 @@
 <template>
-  <button @click.prevent="handleClick" class="ml-button" :class="btnCls">
+  <button class="ml-button" :class="btnCls" @click.prevent="handleClick">
     <slot></slot>
   </button>
 </template>
-<script >
+<script>
 export default {
-  name: "MlButton",
+  name: 'MlButton',
   props: {
+    round: {
+      type: String,
+    },
     size: {
       validator: function (value) {
         // 这个值必须匹配下列字符串中的一个
-        return ["medium", "mini", "small"].indexOf(value) !== -1;
+        return ['medium', 'mini', 'small'].indexOf(value) !== -1
       },
       type: String,
-      default: "medium",
+      default: 'medium',
     },
     type: {
       validator: function (value) {
         // 这个值必须匹配下列字符串中的一个
         // primary / success / warning / danger / info / text
-        return (
-          [
-            "primary",
-            "success",
-            "warning",
-            "danger",
-            "info",
-            "text",
-            "",
-          ].indexOf(value) !== -1
-        );
+        return ['primary', 'success', 'warning', 'danger', 'info', 'text', ''].indexOf(value) !== -1
       },
       type: String,
-      default: "",
-    },
-  },
-  methods: {
-    handleClick(e) {
-      this.$emit("click", e);
+      default: '',
     },
   },
   computed: {
     btnCls() {
-      return "ml-button-" + this.type + " ml-button-" + this.size;
+      return 'ml-button-' + this.type + ' ml-button-' + this.size
     },
   },
-};
+  mounted() {
+    console.log(this.text)
+  },
+  methods: {
+    handleClick(e) {
+      this.$emit('click', e)
+    },
+  },
+}
 </script>
 
-<style lang="scss" >
+<style lang="scss">
 .ml-button {
   display: inline-block;
   line-height: 1;
